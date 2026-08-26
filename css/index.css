@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.add {
+  background-color: green;
+  color: white;
+}
+
+.done {
+  background-color: blue;
+  color: white;
+}
+
+.cancel {
+  background-color: gray;
+  color: white;
+}
+
+.search {
+  display: block;
+  width: 50%;
+  margin: 20px auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: center;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 12px;
+}
+
+th {
+  background-color: #eee;
+}
+
+.edit {
+  background-color: orange;
+  color: white;
+  margin: 3px;
+}
+
+.delete {
+  background-color: red;
+  color: white;
+  margin: 3px;
+}
+
+@media (max-width: 600px) {
+  form,
+  .search {
+    width: 100%;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  th,
+  td {
+    padding: 7px;
+  }
+}

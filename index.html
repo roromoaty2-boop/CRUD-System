@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Student Management System</title>
+  </head>
+
+  <body>
+    <form action="">
+      <input type="text" class="Name" placeholder="Student Name" />
+
+      <input type="number" class="Age" placeholder="Age" />
+
+      <input type="text" class="course" placeholder="Course" />
+
+      <select class="status">
+        <option value="Active">Active</option>
+        <option value="Inactive">Inactive</option>
+      </select>
+
+      <button type="button" class="add">Add Student</button>
+
+      <button type="button" class="done" style="display: none">Done</button>
+
+      <button type="button" class="cancel" style="display: none">Cancel</button>
+    </form>
+
+    <input type="text" class="search" placeholder="Search student by name" />
+
+    <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Course</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+
+      <tbody class="data"></tbody>
+    </table>
+
+    <script src="./javascript/index.js"></script>
+  </body>
+</html>
